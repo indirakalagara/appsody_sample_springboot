@@ -52,7 +52,7 @@ metadata:
     stack.appsody.dev/id: java-spring-boot2
     stack.appsody.dev/version: 0.3.28
   name: appsody-sample-springboot
-  namespace: kabanero-samples
+  namespace: ind-kabanero-samples
 spec:
   applicationImage: dev.local/appsody-sample-springboot
   createKnativeService: false
