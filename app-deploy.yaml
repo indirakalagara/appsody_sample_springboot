@@ -5,6 +5,8 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2019-10-29T16:44:53.794580
+    commit.image.appsody.dev/date: Fri May 8 12:32:30 2020 +0530
+    commit.image.appsody.dev/message: updated
     commit.stack.appsody.dev/author: kilnerm <38245247+kilnerm@users.noreply.github.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/java-spring-boot2
@@ -13,7 +15,11 @@ metadata:
     description: This image is the Kabanero development container for the java-spring-boot2
       stack
     distribution-scope: public
-    image.opencontainers.org/created: "2020-05-08T11:14:26+05:30"
+    image.opencontainers.org/created: "2020-05-11T11:53:52+05:30"
+    image.opencontainers.org/documentation: https://github.com/indirakalagara/appsody_sample_springboot
+    image.opencontainers.org/revision: 0379d6d027ef093742e6a40b3bf0614ab2451c52-modified
+    image.opencontainers.org/source: https://github.com/indirakalagara/appsody_sample_springboot/tree/master
+    image.opencontainers.org/url: https://github.com/indirakalagara/appsody_sample_springboot
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -85,3 +91,9 @@ spec:
     type: NodePort
   stack: java-spring-boot2
   version: 1.0.0
+  volumeMounts:
+  - mountPath: /opt/configuration
+    name: config-volume
+  volumes:
+  - configMap: null
+    name: logconfig
