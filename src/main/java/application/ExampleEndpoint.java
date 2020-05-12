@@ -11,7 +11,7 @@ public class ExampleEndpoint {
 
     @RequestMapping("/starter/hello")
     public String example() {
-        LOGGER.trace("example sayHello ");
+        LOGGER.info("example sayHello ");
         return "Hello World again";
 
     }
