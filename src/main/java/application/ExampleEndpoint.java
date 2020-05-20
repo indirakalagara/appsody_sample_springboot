@@ -12,7 +12,7 @@ public class ExampleEndpoint {
     @RequestMapping("/starter/hello")
     public String example() {
         LOGGER.info("example sayHello ");
-        return "Hello World again - 1205";
+        return "Hello World again - 2005";
 
     }
 }
